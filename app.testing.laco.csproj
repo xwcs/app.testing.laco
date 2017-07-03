@@ -81,8 +81,8 @@
       <HintPath>..\packages\xwcs.core.0.0.2-devel\lib\net46\xwcs.core.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="xwcs.indesign, Version=0.0.1.28503, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\xwcs.indesign.0.0.1-devel\lib\net46\xwcs.indesign.dll</HintPath>
+    <Reference Include="xwcs.indesign, Version=0.0.2.30688, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\xwcs.indesign.0.0.2-devel\lib\net46\xwcs.indesign.dll</HintPath>
       <Private>True</Private>
     </Reference>
   </ItemGroup>
@@ -122,13 +122,13 @@
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\xwcs.native.1.0.0-alpha\build\xwcs.native.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\xwcs.native.1.0.0-alpha\build\xwcs.native.targets'))" />
-    <Error Condition="!Exists('..\packages\xwcs.indesign.0.0.1-devel\build\xwcs.indesign.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\xwcs.indesign.0.0.1-devel\build\xwcs.indesign.targets'))" />
     <Error Condition="!Exists('..\packages\lib.indesign.0.0.1-devel\build\lib.indesign.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\lib.indesign.0.0.1-devel\build\lib.indesign.targets'))" />
     <Error Condition="!Exists('..\packages\xwcs.core.0.0.2-devel\build\xwcs.core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\xwcs.core.0.0.2-devel\build\xwcs.core.targets'))" />
+    <Error Condition="!Exists('..\packages\xwcs.indesign.0.0.2-devel\build\xwcs.indesign.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\xwcs.indesign.0.0.2-devel\build\xwcs.indesign.targets'))" />
   </Target>
-  <Import Project="..\packages\xwcs.indesign.0.0.1-devel\build\xwcs.indesign.targets" Condition="Exists('..\packages\xwcs.indesign.0.0.1-devel\build\xwcs.indesign.targets')" />
   <Import Project="..\packages\lib.indesign.0.0.1-devel\build\lib.indesign.targets" Condition="Exists('..\packages\lib.indesign.0.0.1-devel\build\lib.indesign.targets')" />
   <Import Project="..\packages\xwcs.core.0.0.2-devel\build\xwcs.core.targets" Condition="Exists('..\packages\xwcs.core.0.0.2-devel\build\xwcs.core.targets')" />
+  <Import Project="..\packages\xwcs.indesign.0.0.2-devel\build\xwcs.indesign.targets" Condition="Exists('..\packages\xwcs.indesign.0.0.2-devel\build\xwcs.indesign.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
