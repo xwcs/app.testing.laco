@@ -17,7 +17,8 @@ namespace app.testing.laco
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new lib.indesign.InDesignTestForm());
-            Application.Run(new TestingVidgets());
+            //Application.Run(new TestingVidgets());
+            Application.Run(new xwcs.core.ui.db.fo.FilterOptionsForm());
         }
     }
 }
