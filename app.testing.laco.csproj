@@ -93,16 +93,12 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="xwcs.core, Version=0.0.6.17800, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\xwcs.core.0.0.6-devel\lib\net46\xwcs.core.dll</HintPath>
+    <Reference Include="xwcs.core, Version=0.0.7.29719, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\xwcs.core.0.0.7-devel\lib\net46\xwcs.core.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="xwcs.core.ui, Version=0.0.6.17802, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\xwcs.core.ui.0.0.6-devel\lib\net46\xwcs.core.ui.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="xwcs.indesign, Version=0.0.6.17683, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\xwcs.indesign.0.0.6-devel\lib\net46\xwcs.indesign.dll</HintPath>
+    <Reference Include="xwcs.core.ui, Version=0.0.7.29721, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\xwcs.core.ui.0.0.7-devel\lib\net46\xwcs.core.ui.dll</HintPath>
       <Private>True</Private>
     </Reference>
   </ItemGroup>
@@ -157,6 +153,10 @@
       <Project>{e963e9a5-514e-4cbb-a3f6-34ebefbe6c4f}</Project>
       <Name>lib.indesign</Name>
     </ProjectReference>
+    <ProjectReference Include="..\xwcs.indesign\xwcs.indesign.csproj">
+      <Project>{0f33e15d-8717-4b2e-a20c-93e8896f5b57}</Project>
+      <Name>xwcs.indesign</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="LinqKit\license.txt" />
@@ -168,13 +168,11 @@
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\xwcs.native.1.0.0-alpha\build\xwcs.native.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\xwcs.native.1.0.0-alpha\build\xwcs.native.targets'))" />
-    <Error Condition="!Exists('..\packages\xwcs.indesign.0.0.6-devel\build\xwcs.indesign.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\xwcs.indesign.0.0.6-devel\build\xwcs.indesign.targets'))" />
-    <Error Condition="!Exists('..\packages\xwcs.core.0.0.6-devel\build\xwcs.core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\xwcs.core.0.0.6-devel\build\xwcs.core.targets'))" />
-    <Error Condition="!Exists('..\packages\xwcs.core.ui.0.0.6-devel\build\xwcs.core.ui.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\xwcs.core.ui.0.0.6-devel\build\xwcs.core.ui.targets'))" />
+    <Error Condition="!Exists('..\packages\xwcs.core.0.0.7-devel\build\xwcs.core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\xwcs.core.0.0.7-devel\build\xwcs.core.targets'))" />
+    <Error Condition="!Exists('..\packages\xwcs.core.ui.0.0.7-devel\build\xwcs.core.ui.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\xwcs.core.ui.0.0.7-devel\build\xwcs.core.ui.targets'))" />
   </Target>
-  <Import Project="..\packages\xwcs.indesign.0.0.6-devel\build\xwcs.indesign.targets" Condition="Exists('..\packages\xwcs.indesign.0.0.6-devel\build\xwcs.indesign.targets')" />
-  <Import Project="..\packages\xwcs.core.0.0.6-devel\build\xwcs.core.targets" Condition="Exists('..\packages\xwcs.core.0.0.6-devel\build\xwcs.core.targets')" />
-  <Import Project="..\packages\xwcs.core.ui.0.0.6-devel\build\xwcs.core.ui.targets" Condition="Exists('..\packages\xwcs.core.ui.0.0.6-devel\build\xwcs.core.ui.targets')" />
+  <Import Project="..\packages\xwcs.core.0.0.7-devel\build\xwcs.core.targets" Condition="Exists('..\packages\xwcs.core.0.0.7-devel\build\xwcs.core.targets')" />
+  <Import Project="..\packages\xwcs.core.ui.0.0.7-devel\build\xwcs.core.ui.targets" Condition="Exists('..\packages\xwcs.core.ui.0.0.7-devel\build\xwcs.core.ui.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
