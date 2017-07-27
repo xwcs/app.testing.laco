@@ -209,6 +209,11 @@ namespace app.testing.laco
 
             InDesignForBO.EditFile(_db.iter.Include("iter_in_xwbo_media.xwbo_media").AsNoTracking().Where(i => i.id == 126224).FirstOrDefault());
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            InDesignForBO.EditFile(null, 126224);
+        }
     }
     
 }
