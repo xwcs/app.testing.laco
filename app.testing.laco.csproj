@@ -113,6 +113,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Http.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Http.Designer.cs">
+      <DependentUpon>Http.cs</DependentUpon>
+    </Compile>
     <Compile Include="InDesignTestFormlaco.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +139,9 @@
     <Compile Include="TestValidation.Designer.cs">
       <DependentUpon>TestValidation.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Http.resx">
+      <DependentUpon>Http.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="InDesignTestFormlaco.resx">
       <DependentUpon>InDesignTestFormlaco.cs</DependentUpon>
     </EmbeddedResource>

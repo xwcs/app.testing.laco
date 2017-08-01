@@ -16,9 +16,10 @@ namespace app.testing.laco
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new app.testing.laco.InDesignTestFormLaco());
+            //Application.Run(new app.testing.laco.InDesignTestFormLaco());
             //Application.Run(new TestingVidgets());
             //Application.Run(new TestValidation());
+            Application.Run(new Http());
         }
     }
 }
