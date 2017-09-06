@@ -18,9 +18,9 @@ namespace app.testing.laco
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new app.testing.laco.InDesignTestFormLaco());
             //Application.Run(new TestingVidgets());
-            //Application.Run(new TestValidation());
+            Application.Run(new TestValidation());
             //Application.Run(new Http());
-            Application.Run(new EfModified());
+            //Application.Run(new EfModified());
         }
         
     }
