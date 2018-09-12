@@ -199,6 +199,10 @@
       <Project>{d05e4c2e-bdb3-4d39-b352-932c423b6321}</Project>
       <Name>lib.db.doc.niterdoc</Name>
     </ProjectReference>
+    <ProjectReference Include="..\lib.db\lib.db.titles.niterdoc\lib.db.titles.niterdoc.csproj">
+      <Project>{e919de39-93c6-48a5-9514-93598d1d3063}</Project>
+      <Name>lib.db.titles.niterdoc</Name>
+    </ProjectReference>
     <ProjectReference Include="..\lib.indesign\lib.indesign.csproj">
       <Project>{e963e9a5-514e-4cbb-a3f6-34ebefbe6c4f}</Project>
       <Name>lib.indesign</Name>
