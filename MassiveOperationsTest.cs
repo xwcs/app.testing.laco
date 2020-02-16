@@ -38,11 +38,18 @@ namespace app.testing.laco
                 splashScreenManager1.ShowWaitForm();
                 splashScreenManager1.SetWaitFormCaption("Atendere prego");
 
-                mo.ImportRTF(openFileDialog1.FileName, (s, current, count) =>
+                mo.ImportRTF(openFileDialog1.FileName, (s, msg) =>
                 {
-                    memoEdit1.Text += "\r\n" + s.Rtf.fileName;
+                    if(s != null)
+                    {
+                        memoEdit1.Text += "\r\n" + s.Rtf.fileName;
+                    } else
+                    {
+                        memoEdit1.Text += "\r\n" + msg;
+                    }
+                    
 
-                    splashScreenManager1.SetWaitFormDescription($"Importazione ...{current}/{count}");
+                    splashScreenManager1.SetWaitFormDescription(msg);
 
                 });
 
