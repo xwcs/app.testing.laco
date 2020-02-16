@@ -63,7 +63,7 @@
             // 
             // memoEdit1
             // 
-            this.memoEdit1.Location = new System.Drawing.Point(13, 42);
+            this.memoEdit1.Location = new System.Drawing.Point(13, 41);
             this.memoEdit1.Name = "memoEdit1";
             this.memoEdit1.Size = new System.Drawing.Size(985, 532);
             this.memoEdit1.TabIndex = 3;
