@@ -152,6 +152,12 @@
     <Compile Include="TestValidation.Designer.cs">
       <DependentUpon>TestValidation.cs</DependentUpon>
     </Compile>
+    <Compile Include="WaitForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WaitForm1.Designer.cs">
+      <DependentUpon>WaitForm1.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="EfModified.resx">
       <DependentUpon>EfModified.cs</DependentUpon>
     </EmbeddedResource>
@@ -180,6 +186,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TestValidation.resx">
       <DependentUpon>TestValidation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WaitForm1.resx">
+      <DependentUpon>WaitForm1.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

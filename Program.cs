@@ -14,6 +14,9 @@ namespace app.testing.laco
         [STAThread]
         static void Main()
         {
+            // some system init (dll 86/64 management)
+            xwcs.core.Core.Init();
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MassiveOperationsTest());

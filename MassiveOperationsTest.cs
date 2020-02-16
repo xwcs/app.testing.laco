@@ -24,7 +24,30 @@ namespace app.testing.laco
             lib.db.doc.niterdoc.NiterDocEntities db = new lib.db.doc.niterdoc.NiterDocEntities();
             MassiveOperations mo = new MassiveOperations(db);
 
-            mo.ImportRTF();
+            var openFileDialog1 = new OpenFileDialog()
+            {
+                FileName = "Scegli indice di importazione",
+                Filter = "Indice (*.csv)|*.csv",
+                Title = "Apri indice di import",
+                Multiselect = false
+            };
+
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+
+                splashScreenManager1.ShowWaitForm();
+                splashScreenManager1.SetWaitFormCaption("Atendere prego");
+
+                mo.ImportRTF(openFileDialog1.FileName, (s, current, count) =>
+                {
+                    memoEdit1.Text += "\r\n" + s.Rtf.fileName;
+
+                    splashScreenManager1.SetWaitFormDescription($"Importazione ...{current}/{count}");
+
+                });
+
+                splashScreenManager1.CloseWaitForm();
+            }
         }
     }
 }
