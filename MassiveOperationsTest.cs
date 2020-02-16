@@ -1,4 +1,5 @@
-﻿using System;
+﻿using lib.db.doc.niterdoc.massive;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,6 +21,10 @@ namespace app.testing.laco
         private void button1_Click(object sender, EventArgs e)
         {
 
+            lib.db.doc.niterdoc.NiterDocEntities db = new lib.db.doc.niterdoc.NiterDocEntities();
+            MassiveOperations mo = new MassiveOperations(db);
+
+            mo.ImportRTF();
         }
     }
 }
