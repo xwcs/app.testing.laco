@@ -17,7 +17,7 @@ namespace app.testing.laco
             // some system init (dll 86/64 management)
             xwcs.core.Core.Init();
 
-            xwcs.core.user.SecurityContext.getInstance().setUserProvider(new lib.core.user.BackOfficeUserProvider());
+            
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

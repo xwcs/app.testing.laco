@@ -114,7 +114,7 @@ namespace app.testing.laco
                     done = true;
             }catch(Exception ex)
                 {
-                    Console.Write(ex.Message);
+                    Console.Write(ex.ToString());
                 }
 
 
