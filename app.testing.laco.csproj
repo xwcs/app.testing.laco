@@ -120,6 +120,12 @@
     <Compile Include="EfModified.Designer.cs">
       <DependentUpon>EfModified.cs</DependentUpon>
     </Compile>
+    <Compile Include="GridlayoutConfigs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridlayoutConfigs.Designer.cs">
+      <DependentUpon>GridlayoutConfigs.cs</DependentUpon>
+    </Compile>
     <Compile Include="Http.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -160,6 +166,9 @@
     </Compile>
     <EmbeddedResource Include="EfModified.resx">
       <DependentUpon>EfModified.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridlayoutConfigs.resx">
+      <DependentUpon>GridlayoutConfigs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Http.resx">
       <DependentUpon>Http.cs</DependentUpon>
@@ -224,6 +233,10 @@
     <ProjectReference Include="..\lib.indesign\lib.indesign.csproj">
       <Project>{e963e9a5-514e-4cbb-a3f6-34ebefbe6c4f}</Project>
       <Name>lib.indesign</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\plugin.documents\plugin.documents.csproj">
+      <Project>{800241CF-8B8D-4BA7-A575-D019F246B318}</Project>
+      <Name>plugin.documents</Name>
     </ProjectReference>
     <ProjectReference Include="..\xwcs.core.ui\xwcs.core.ui.csproj">
       <Project>{13078a0f-c037-44e2-97a3-fddef2faed8b}</Project>
